@@ -1,0 +1,15 @@
+{
+  "name": "chaiorback",
+  "version": "1.0.0",
+  "description": "a backend package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "backend"
+  ],
+  "author": "kartikey sharma",
+  "license": "ISC"
+}
