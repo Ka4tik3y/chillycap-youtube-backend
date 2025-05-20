@@ -226,6 +226,7 @@ const refreshAccessToken = asyncHandler(async (req, res, next) => {
 
 const changeCurrentPassword = asyncHandler(async (req, res, next) => {
   const { oldPassword, newPassword } = req.body;
+  // console.log( "ghi")
   const user = await User.findById(req.user._id);
   const isPasswordCorrect = await user.isPasswordCorrect(oldPassword);
   if (!isPasswordCorrect) {
@@ -233,6 +234,7 @@ const changeCurrentPassword = asyncHandler(async (req, res, next) => {
   }
   user.password = newPassword;
   await user.save({ validateBeforeSave: false });
+  console.log(newPassword);
   res
     .status(200)
     .json(new ApiResponse(200), {}, "PASSWORD CHANGED SUUCCESSFULLYY");
