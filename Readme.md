@@ -148,7 +148,7 @@ CLOUDINARY_URL=cloudinary: ""
 
 5. **Access the Application**
 
-   The application will be running at `http://localhost:5000`.
+   The application will be running at `http://localhost:8000`.
 
 ---
 
